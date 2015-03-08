@@ -13,10 +13,10 @@
    <h1><center>Farmacia</center></h1>
   <br><br>
     <div class="col-lg-12"><center><h2>Bienvenido a la farmacia </h2>
+    <h3><br><a href="catalogo">Ver catalogo</a></h3>
     <br>
     <br>
     <br>La información proporcionada en esta página es de caracter privado por lo que esta prohibido copiar, guardar o duplicar cualquier dato mostrado en este portal web
-    <br>
     <br>
     <br>
     Para iniciar sesion de click en la parte superior derecha

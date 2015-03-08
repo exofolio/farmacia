@@ -48,3 +48,4 @@ Route::get('checkout',function(){
   return View::make('checkout');
 });
 Route::post('carrito','CarritoController@checkout');
+Route::get('gracias',function(){return View::make('gracias');});

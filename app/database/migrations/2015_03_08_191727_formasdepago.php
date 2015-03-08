@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Compras extends Migration {
+class Formasdepago extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,15 +12,12 @@ class Compras extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('compras', function(Blueprint $table)
+		Schema::create('formasdepago', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->integer('id_cliente')->unsigned();
 			$table->foreign('id_cliente')->references('id')->on('clientes');
-			$table->integer('id_medicamento')->unsigned();
-			$table->foreign('id_medicamento')->references('id')->on('catalogo');
-			$table->boolean('pago');
-			$table->integer('cantidad')->unsigned();
+			$table->string('num_tarjeta');
 			$table->timestamps();
 		});
 	}
@@ -32,7 +29,7 @@ class Compras extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('compras');
+		Schema::drop('formasdepago');
 	}
 
 }
