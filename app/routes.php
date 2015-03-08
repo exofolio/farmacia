@@ -17,6 +17,10 @@
 Route::get('/',function(){
 	return View::make('inicio');
 });
+Route::get('logout',function(){
+	Auth::logout();
+	return Redirect::to('/');
+});
 Route::get('catalogo',function(){return View::make('catalogo');});
 Route::get('signup',function(){
 	return View::make('signup');

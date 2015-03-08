@@ -45,7 +45,8 @@
 </table>
 {{Form::close()}}
 @else
-No has hecho ninguna compra
+<br><br>
+<h2 class="text-center">No has realizado ninguna compra</h2>
 @endif
 
   @stop
