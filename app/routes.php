@@ -38,5 +38,9 @@ Route::get('producto/{id?}',function($id){
 });
 Route::post('producto/{id?}','CatalogosController@carrito');
 Route::get('carrito',function(){
-  return Session::get('cliente.compra');
+  return View::make('carrito');
 });
+Route::get('checkout',function(){
+  return View::make('checkout');
+});
+Route::post('carrito','CarritoController@checkout');
