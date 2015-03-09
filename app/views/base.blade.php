@@ -8,7 +8,10 @@
   <div class="container">
   <div class="row">
   <br>
-  <p class="text-right">@yield('usuario')</p>
+  <div class="text-left col-lg-8"><a href="carrito">Ver carrito</a></p>
+  </div>
+  <div class="text-right col-lg-4">@yield('usuario')
+  </div>
   </div>
   @yield('contenido')
   
