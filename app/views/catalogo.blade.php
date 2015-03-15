@@ -37,6 +37,11 @@
 	</tr>
 	@endforeach
 	</table>
+	<p>
+	@if(Session::has('mensaje_stock'))
+	{{$mensaje_stock}}
+	@endif
+	</p>
 	@stop
 @stop 
  
