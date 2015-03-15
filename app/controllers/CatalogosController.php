@@ -32,7 +32,7 @@ class CatalogosController extends BaseController{
   }
   else
   {
-  Sessi4on::push('cliente.compra', $compra);
+  Session::push('cliente.compra', $compra);
   return Redirect::to('catalogo');
   }
   }
